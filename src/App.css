@@ -1,0 +1,161 @@
+body {
+  font-family: math;
+  margin: 0;
+  padding: 0;
+  background-image: url("https://images-cdn.welcomesoftware.com/Zz05NmM1YjFjYjhlNDIxMWViODczZWQzYzBkNTFlNDU4ZA==");
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  /* max-width: 400px; */
+  width: 100%;
+  overflow: auto;
+  height: 500px;
+}
+
+.upload-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+  height: 30px;
+  border: 2px dashed #aaa;
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.3s;
+  font-size: 18px;
+}
+
+.upload-btn.active {
+  border-color: #555;
+}
+
+.file-list {
+  margin-top: 20px;
+}
+
+.file-item {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.thumbnail {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.file-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.convert button {
+  margin: 0px 20px;
+  border: solid 1px black;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  padding: 10px 10px;
+
+}
+
+.download {
+  border: solid 1px black;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  padding: 10px 10px;
+
+}
+
+.five-stage-progress {
+  /* text-align: center; */
+  margin: auto;
+  /* padding: 20px; */
+  width: 400px;
+  padding: 1rem;
+}
+
+.progress-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.progress-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+  height: 10px;
+}
+
+.progress-icon.filled {
+  background-color: #007bff;
+  color: white;
+}
+
+progress {
+  width: 100%;
+  height: 20px;
+  background: var(--progress-bar-color);
+  border-radius: 8px;
+  appearance: none;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 8px;
+}
+
+progress::-webkit-progress-value {
+  border-radius: 8px;
+}
+
+.progress-label {
+  margin: 2rem 0 1rem 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ratings h2 {
+  text-align: center;
+  padding: 1rem 0 2rem 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px; /* width of the scrollbar */
+  height: 12px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* color of the thumb */
+  border-radius: 6px; /* rounded corners on the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* color of the thumb on hover */
+}
+
+@media (min-width:320px) and (max-width:991px) {
+  .card{
+    margin-bottom: 1rem ;
+  }
+}
